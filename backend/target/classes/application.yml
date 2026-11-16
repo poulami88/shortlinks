@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    # Defaults to a local H2 file database. Set DB_URL/DB_USER/DB_PASSWORD for PostgreSQL.
+    url: ${DB_URL:jdbc:h2:file:./data/shortlinks}
+    username: ${DB_USER:sa}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+app:
+  # Public base URL used to build short links returned by the API
+  base-url: ${APP_BASE_URL:http://localhost:8080}
+  # Origin of the frontend allowed to call /api/** (CORS)
+  cors-allowed-origin: ${CORS_ALLOWED_ORIGIN:http://localhost:5173}
+
+server:
+  port: 8080

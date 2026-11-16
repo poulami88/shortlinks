@@ -1,0 +1,12 @@
+com\shortlinks\exception\ApiExceptionHandler.class
+com\shortlinks\ShortLinksApplication.class
+com\shortlinks\config\AppProperties.class
+com\shortlinks\web\LinkController.class
+com\shortlinks\repository\LinkRepository.class
+com\shortlinks\web\RedirectController.class
+com\shortlinks\model\Link.class
+com\shortlinks\dto\CreateLinkRequest.class
+com\shortlinks\config\WebConfig.class
+com\shortlinks\exception\ApiException.class
+com\shortlinks\dto\LinkResponse.class
+com\shortlinks\service\LinkService.class
